@@ -5,10 +5,10 @@ mapa-instrumentos-uruguay.html
   El sitio completo en un solo archivo. Se abre con doble clic en cualquier navegador.
 
 Clasificacion_etapas_B20_revisada_bases.xlsx
-  Excel de insumos con: criterio experto (etapa de los 75 instrumentos, método, referencia y
-  fundamento), SiGa Innovación incorporado, ajustes con sustento en bases (resaltados con
-  comentario y cita), revisión de alertas, fuentes a corregir, palabras clave, fuentes
-  consultadas y montos detectados.
+  Excel de insumos con: criterio experto (etapa de los 83 instrumentos, método, referencia y
+  fundamento), instrumentos incorporados desde referencias expertas, ajustes con sustento en
+  bases (resaltados con comentario y cita), revisión de alertas, fuentes a corregir, palabras
+  clave, fuentes consultadas y montos detectados.
 
 proyecto-fuente.zip
   Código del sitio (React + Vite + Framer Motion), datos y scripts:
@@ -24,4 +24,4 @@ proyecto-fuente.zip
     npm run data
     python3 scripts/aplicar_criterio_experto.py
   Decisiones editables: data-fuente/criterio_experto.json, decisiones_revision_bases.json,
-  instrumentos_incorporados.json.
+  instrumentos_incorporados.json (incluye referencias excluidas, como Ceilab).
