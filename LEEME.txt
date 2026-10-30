@@ -1,12 +1,14 @@
-Mapa de instrumentos de apoyo empresarial · UNE
-================================================
+Portafolio de instrumentos de CTI · UNE
+=======================================
 
 mapa-instrumentos-uruguay.html
   El sitio completo en un solo archivo. Se abre con doble clic en cualquier navegador.
 
 Clasificacion_etapas_B20_revisada_bases.xlsx
-  Excel de insumos con palabras clave, revisión con bases (ajustes resaltados con
-  comentario y cita), fuentes a corregir, y montos y cofinanciamiento detectados.
+  Excel de insumos con: criterio experto (etapa de los 75 instrumentos, método, referencia y
+  fundamento), SiGa Innovación incorporado, ajustes con sustento en bases (resaltados con
+  comentario y cita), revisión de alertas, fuentes a corregir, palabras clave, fuentes
+  consultadas y montos detectados.
 
 proyecto-fuente.zip
   Código del sitio (React + Vite + Framer Motion), datos y scripts:
@@ -14,9 +16,12 @@ proyecto-fuente.zip
     npm run dev            sitio en modo desarrollo
     npm run build          sitio estático en dist/
     npm run build:single   un solo HTML en dist-single/
-  Actualizar datos:
+  Actualizar datos (en este orden):
+    npm run data
     python3 scripts/extraer_bases.py data-fuente/Clasificacion_etapas_B20_ajustada.xlsx
     python3 scripts/revisar_clasificacion.py
     python3 scripts/aplicar_revision_excel.py
     npm run data
-  Detalle en README.md dentro del proyecto.
+    python3 scripts/aplicar_criterio_experto.py
+  Decisiones editables: data-fuente/criterio_experto.json, decisiones_revision_bases.json,
+  instrumentos_incorporados.json.
